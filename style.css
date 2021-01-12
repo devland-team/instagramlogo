@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(0, 3, 19);
+}
+
+.mainBox {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  border-radius: 60px;
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBox:before{
+    content: '';
+    position: absolute;
+    top: 22%;
+    right:22%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100px;
+
+}
+
+.mainBox::after{
+  content: ''; 
+  position: absolute; 
+  border-radius: 50px;
+  border: 20px solid white;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+}
+
+.mainBox .circle{
+  width: 80px;
+  height: 80px;
+  border: 20px solid white;
+  border-radius: 100px;
+}
